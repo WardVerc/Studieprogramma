@@ -11,5 +11,6 @@ public class App
         System.out.println( "Hello World!" );
         System.out.println("First push to remote repository. Is gelukt.");
         System.out.println("Hoe krijg ik een gitignore file?");
+        System.out.println("Ik heb precies 2 branches in plaats van 1?");
     }
 }
