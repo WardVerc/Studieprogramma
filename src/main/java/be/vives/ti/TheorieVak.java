@@ -2,6 +2,8 @@ package be.vives.ti;
 
 public class TheorieVak extends Vak {
 
+    private int punten;
+
     public TheorieVak(String naamVak, int studiepunt) {
         //constructor van theorieVak gebruikt de constructor
         //die gedeclareerd is in de abstract class
@@ -9,5 +11,11 @@ public class TheorieVak extends Vak {
         super(naamVak, studiepunt);
     }
 
+    public int getPunten() {
+        return punten;
+    }
 
+    public void setPunten(int punten) {
+        this.punten = punten;
+    }
 }

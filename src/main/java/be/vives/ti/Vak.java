@@ -3,13 +3,11 @@ package be.vives.ti;
 public abstract class Vak {
 
     private String naam;
-    private int punten;
     private int studiepunten;
 
     public Vak(String naamVak, int studiepunt) {
         naam = naamVak;
         studiepunten = studiepunt;
-        punten = 0;
     }
 
     public String getNaam() {
@@ -18,14 +16,6 @@ public abstract class Vak {
 
     public void setNaam(String naam) {
         this.naam = naam;
-    }
-
-    public int getPunten() {
-        return punten;
-    }
-
-    public void setPunten(int punten) {
-        this.punten = punten;
     }
 
     public int getStudiepunten() {
@@ -40,7 +30,7 @@ public abstract class Vak {
 
         String text = naam;
         text += " " + studiepunten + "SP"
-                + " " + punten + "\n";
+                + "\n";
 
         return text;
 
