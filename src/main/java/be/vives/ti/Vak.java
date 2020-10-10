@@ -27,6 +27,8 @@ public abstract class Vak {
         this.studiepunten = studiepunten;
     }
 
-
+    public boolean isVoldoende() {
+        return false;
+    }
 
 }

@@ -19,6 +19,7 @@ public class PraktijkVak extends Vak {
         this.punten = code;
     }
 
+    @Override
     public boolean isVoldoende() {
         boolean resultaat = false;
         switch (punten) {
@@ -36,6 +37,7 @@ public class PraktijkVak extends Vak {
 
     }
 
+    @Override
     public String toString() {
 
         String text = naam;

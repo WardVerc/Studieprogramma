@@ -60,8 +60,24 @@ public class Student
         }
     }
 
+    public String isGeslaagd() {
+        String result = "";
+        for (int i = 0; i < vakken.size(); i++) {
+            if (vakken.get(i).isVoldoende()) {
+                result = "GESLAAGD";
+            } else {
+                result = "NIET GESLAAGD";
+                break;
+            }
+        }
+        return result;
+
+    }
+
+    @Override
     public String toString() {
-        String text = "\n" + naam;
+        String text = "\n" + naam
+                + " - " + isGeslaagd();
                 text +=  "\n";
 
             for (int i = 0; i < vakken.size(); i++) {

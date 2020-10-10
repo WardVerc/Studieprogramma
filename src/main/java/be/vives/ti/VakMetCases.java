@@ -19,6 +19,7 @@ public class VakMetCases extends Vak {
         this.punten = punten;
     }
 
+    @Override
     public boolean isVoldoende() {
         if (punten >= 60) {
             return true;
@@ -27,6 +28,7 @@ public class VakMetCases extends Vak {
         }
     }
 
+    @Override
     public String toString() {
 
         String text = naam;
