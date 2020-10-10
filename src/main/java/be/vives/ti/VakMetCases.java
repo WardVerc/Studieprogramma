@@ -19,4 +19,12 @@ public class VakMetCases extends Vak {
         this.punten = punten;
     }
 
+    public boolean isVoldoende() {
+        if (punten >= 60) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

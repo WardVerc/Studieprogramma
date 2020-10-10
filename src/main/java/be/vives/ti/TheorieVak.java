@@ -18,4 +18,12 @@ public class TheorieVak extends Vak {
     public void setPunten(int punten) {
         this.punten = punten;
     }
+
+    public boolean isVoldoende() {
+        if (punten >= 10) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
