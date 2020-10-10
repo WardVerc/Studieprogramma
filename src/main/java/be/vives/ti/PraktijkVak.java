@@ -18,4 +18,21 @@ public class PraktijkVak extends Vak {
     public void setPunten(QuotatieCodes code) {
         this.punten = code;
     }
+
+    public boolean isVoldoende() {
+        boolean resultaat = false;
+        switch (punten) {
+            case UITSTEKEND:
+            case GOED:
+            case VOLDOENDE:
+                resultaat = true;
+                break;
+            case ONVOLDOENDE:
+            case SLECHT:
+                resultaat = false;
+                break;
+        }
+        return resultaat;
+
+    }
 }

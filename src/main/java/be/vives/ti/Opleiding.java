@@ -9,10 +9,10 @@ public class Opleiding
     public static void main( String[] args )
     {
         //Maak een aantal vakken aan
-        Vak wiskunde = new TheorieVak("Wiskunde", 5);
-        Vak algoritmes = new TheorieVak("Algoritmes", 4);
-        Vak analyse = new PraktijkVak("Analyse en Design", 8);
-        Vak webdev = new VakMetCases("Webdevelopment", 2);
+        TheorieVak wiskunde = new TheorieVak("Wiskunde", 5);
+        TheorieVak algoritmes = new TheorieVak("Algoritmes", 4);
+        PraktijkVak analyse = new PraktijkVak("Analyse en Design", 8);
+        VakMetCases webdev = new VakMetCases("Webdevelopment", 2);
 
         //maak een aantal studenten aan
         Student ward = new Student("Ward Vercruyssen");
@@ -21,9 +21,11 @@ public class Opleiding
         ward.addVak(wiskunde);
         ward.addVak(algoritmes);
         ward.addVak(analyse);
+        analyse.setPunten(QuotatieCodes.VOLDOENDE);
         ward.addVak(webdev);
 
         //toon student en zijn vakken op console
+        System.out.println(analyse.isVoldoende());
         System.out.println(ward.toString());
 
         //sorteer vakken
