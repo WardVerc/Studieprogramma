@@ -2,8 +2,9 @@ package be.vives.ti;
 
 public abstract class Vak {
 
-    private String naam;
-    private int studiepunten;
+    //public variables zodat de child klassen hier aan kunnen
+    public String naam;
+    public int studiepunten;
 
     public Vak(String naamVak, int studiepunt) {
         naam = naamVak;
@@ -26,14 +27,6 @@ public abstract class Vak {
         this.studiepunten = studiepunten;
     }
 
-    public String toString() {
 
-        String text = naam;
-        text += " " + studiepunten + "SP"
-                + "\n";
-
-        return text;
-
-    }
 
 }

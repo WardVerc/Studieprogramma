@@ -64,11 +64,9 @@ public class Student
         String text = "\n" + naam;
                 text +=  "\n";
 
-                for (int i = 0; i < vakken.size(); i++) {
-                    text += vakken.get(i).toString();
-                }
-
-
+            for (int i = 0; i < vakken.size(); i++) {
+                text += vakken.get(i).toString();
+            }
         return text;
     }
 

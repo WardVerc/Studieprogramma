@@ -26,4 +26,15 @@ public class TheorieVak extends Vak {
             return false;
         }
     }
+
+    public String toString() {
+
+        String text = naam;
+        text += " " + studiepunten + "SP"
+                + " " + punten + "/20"
+                + "\n";
+
+        return text;
+
+    }
 }

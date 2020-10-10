@@ -35,4 +35,16 @@ public class PraktijkVak extends Vak {
         return resultaat;
 
     }
+
+    public String toString() {
+
+        String text = naam;
+        text += " " + studiepunten + "SP"
+                + " " + punten
+                + "\n";
+
+        return text;
+
+    }
+
 }

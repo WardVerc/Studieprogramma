@@ -24,8 +24,13 @@ public class Opleiding
         analyse.setPunten(QuotatieCodes.VOLDOENDE);
         ward.addVak(webdev);
 
+        //voeg punten toe
+        wiskunde.setPunten(8);
+        algoritmes.setPunten(10);
+        analyse.setPunten(QuotatieCodes.GOED);
+        webdev.setPunten(59);
+
         //toon student en zijn vakken op console
-        System.out.println(analyse.isVoldoende());
         System.out.println(ward.toString());
 
         //sorteer vakken
