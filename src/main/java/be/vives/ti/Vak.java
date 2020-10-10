@@ -1,8 +1,6 @@
 package be.vives.ti;
 
-//voorlopig nog geen abstract om te kunnen testen
-//vergeet niet te veranderen naar een abstract class!!
-public class Vak {
+public abstract class Vak {
 
     private String naam;
     private int punten;

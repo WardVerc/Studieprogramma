@@ -9,10 +9,10 @@ public class Opleiding
     public static void main( String[] args )
     {
         //Maak een aantal vakken aan
-        Vak wiskunde = new Vak("Wiskunde", 5);
-        Vak algoritmes = new Vak("Algoritmes", 4);
-        Vak analyse = new Vak("Analyse en Design", 8);
-        Vak webdev = new Vak("Webdevelopment", 2);
+        Vak wiskunde = new TheorieVak("Wiskunde", 5);
+        Vak algoritmes = new TheorieVak("Algoritmes", 4);
+        Vak analyse = new PraktijkVak("Analyse en Design", 8);
+        Vak webdev = new VakMetCases("Webdevelopment", 2);
 
         //maak een aantal studenten aan
         Student ward = new Student("Ward Vercruyssen");
