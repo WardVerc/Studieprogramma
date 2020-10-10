@@ -42,7 +42,7 @@ public class Opleiding
         analyse2.setPunten(QuotatieCodes.VOLDOENDE);
         webdev2.setPunten(88);
 
-        //toon student en zijn vakken op console
+        //toon student en zijn ongesorteerde vakken op console
         System.out.println(ward.toString());
         System.out.println(michiel.toString());
 
