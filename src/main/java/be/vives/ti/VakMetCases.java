@@ -32,8 +32,13 @@ public class VakMetCases extends Vak {
     public String toString() {
 
         String text = naam;
-        text += " " + studiepunten + "SP"
-                + " " + punten + "/100"
+        text += " " + studiepunten + "SP";
+
+        if (isVoldoende() == false) {
+            text += " niet geslaagd - moet hernomen worden";
+        }
+
+         text += " " + punten + "/100"
                 + "\n";
 
         return text;

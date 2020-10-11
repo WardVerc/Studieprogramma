@@ -32,8 +32,13 @@ public class TheorieVak extends Vak {
     public String toString() {
 
         String text = naam;
-        text += " " + studiepunten + "SP"
-                + " " + punten + "/20"
+        text += " " + studiepunten + "SP";
+
+        if (isVoldoende() == false) {
+            text += " niet geslaagd - moet hernomen worden";
+        }
+
+        text += " " + punten + "/20"
                 + "\n";
 
         return text;

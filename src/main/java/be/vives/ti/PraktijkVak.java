@@ -41,8 +41,13 @@ public class PraktijkVak extends Vak {
     public String toString() {
 
         String text = naam;
-        text += " " + studiepunten + "SP"
-                + " " + punten
+        text += " " + studiepunten + "SP";
+
+        if (isVoldoende() == false) {
+            text += " niet geslaagd - moet hernomen worden";
+        }
+
+        text += " " + punten
                 + "\n";
 
         return text;
