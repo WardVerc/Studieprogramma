@@ -1,17 +1,25 @@
 package be.vives.ti;
 
+import java.util.ArrayList;
+
 /**
  *
  *
  */
 public class Opleiding
 {
-    public static void main( String[] args )
+     public static void main( String[] args )
     {
+        //maak een lijst voor studenten
+        ArrayList<Student> studenten = new ArrayList<Student>();
 
         //maak een aantal studenten aan
         Student ward = new Student("Ward Vercruyssen");
         Student michiel = new Student("Michiel Demoor");
+
+        //voeg studenten toe aan lijst
+        studenten.add(ward);
+        studenten.add(michiel);
 
         //Maak een aantal vakken aan
         TheorieVak wiskunde = new TheorieVak("Wiskunde", 5);
@@ -42,17 +50,15 @@ public class Opleiding
         analyse2.setPunten(QuotatieCodes.VOLDOENDE);
         webdev2.setPunten(88);
 
-        //toon student en zijn ongesorteerde vakken op console
-        System.out.println(ward.toString());
-        System.out.println(michiel.toString());
-
-        //sorteer vakken
-        ward.sorteerVakken();
-        michiel.sorteerVakken();
-
         //toon student en zijn gesorteerde vakken op console
-        System.out.println(ward.toString());
-        System.out.println(michiel.toString());
+        for (int i = 0; i < studenten.size(); i++) {
+            //sorteer vakken eerst
+            studenten.get(i).sorteerVakken();
+            //print op console
+            System.out.println(studenten.get(i));
+        }
 
     }
+
+
 }
