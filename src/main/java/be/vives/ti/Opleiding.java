@@ -3,7 +3,12 @@ package be.vives.ti;
 import java.util.ArrayList;
 
 /**
+ * class Opleiding - Dit is de hoofdklasse van dit project.
+ * Hier zet je alles op (creëeren van studenten/vakken, toevoegen van punten)
+ * en kan je het traject van alle studenten laten printen op de console.
  *
+ * @author Ward Vercruyssen
+ * @version 1.0
  *
  */
 public class Opleiding
@@ -50,7 +55,7 @@ public class Opleiding
         analyse2.setPunten(QuotatieCodes.VOLDOENDE);
         webdev2.setPunten(88);
 
-        //toon student en zijn gesorteerde vakken op console
+        //print alle studenten en hun gesorteerde vakken op console
         for (int i = 0; i < studenten.size(); i++) {
             //sorteer vakken eerst
             studenten.get(i).sorteerVakken();
