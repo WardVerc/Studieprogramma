@@ -5,7 +5,7 @@ package be.vives.ti;
  * waarbij er punten worden gegeven op 20.
  */
 
-public class TheorieVak extends Vak {
+public class TheorieVak extends Vak implements Punten {
 
     private int punten;
 

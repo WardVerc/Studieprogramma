@@ -54,12 +54,22 @@ public abstract class Vak {
     }
 
     /**
-     * indien een nieuw soort vak gemaakt wordt waarbij isVoldoende() niet
-     * wordt gedeclareerd, zal deze functie false returnen
-     * @return boolean false indien deze method niet wordt Override
+     * Deze functie checkt indien een student slaagt voor een vak.
+     * Dit hangt af van het type vak dus wordt deze herschreven
+     * in de respectievelijke klassen.
+     * @return boolean false indien student voor dit vak niet geslaagd is,
+     * true indien de student voor dit vak wel geslaagd is.
      */
-    public boolean isVoldoende() {
-        return false;
-    }
+    abstract public boolean isVoldoende();
+
+    /**
+     * Geeft een String terug met de naam van het vak, het aantal
+     * studiepunten, indien de student hiervoor niet geslaagd is,
+     * en de punten van het vak.
+     * De punten hangen af van een maximum en deze verschilt per vaktype,
+     * daarom wordt deze anders geïmplementeerd in de subklassen.
+     * @return String met de gegevens van dit vak voor de student.
+     */
+    abstract public String toString();
 
 }
