@@ -46,6 +46,7 @@ public class PraktijkVak extends Vak {
      * de student niet geslaagd is.
      */
     @Override
+    // TODO LEUKA:  dit kon korter. Zie tip in opgave.
     public boolean isVoldoende() {
         boolean resultaat = false;
         switch (punten) {

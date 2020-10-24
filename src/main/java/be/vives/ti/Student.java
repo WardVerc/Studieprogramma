@@ -56,6 +56,8 @@ public class Student
      * Sorteert de vakken van de student adhv het aantal studiepunten
      * per vak van klein naar groot
      */
+    // TODO LEUKA: het is niet de bedoeling dat je zelf sorteeralgoritmes gaat schrijven.
+    //  Je kan die zelden efficiënter schrijven dan deze die aangeboden worden via de libraries!
     public void sorteerVakken() {
 
         //voer een bubblesort uit adhv aantal studiepunten per vak
